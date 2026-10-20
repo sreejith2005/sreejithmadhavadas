@@ -1,0 +1,312 @@
+# CODEX MASTER PROMPT — PERSONAL PORTFOLIO RECONSTRUCTION
+
+## ROLE
+
+Act as a Principal Creative Developer, Frontend Architect, GSAP Motion Engineer, Responsive Design Specialist, and Visual QA Engineer.
+
+You are working inside my existing personal portfolio codebase:
+
+`C:\Users\user\Downloads\sree-portfolio-website`
+
+Reference website: https://juanmora.co/
+
+Your objective is to transform my partially completed portfolio into a polished, fully functional, reference-inspired experience with extremely high visual, responsive, and motion fidelity.
+
+Do not build a generic modern portfolio. Reproduce the reference's actual visual and interaction systems as closely as practicable while preserving my identity and using original or properly licensed creative assets.
+
+## EXISTING PROJECT CONTEXT
+
+The previous comprehensive audit established:
+
+- Next.js 14.2.5 App Router
+- React 18.3.1
+- TypeScript
+- Tailwind CSS 3
+- GSAP 3.15.0
+- Lenis 1.0.42
+- Only the homepage is currently implemented
+- Work and About routes are missing
+- Existing animations require lifecycle corrections
+- Existing font configuration causes display-font fallback
+- Images have incorrect crops and responsive positioning
+- Footer video requires optimization and fallback handling
+- Twenty-four service cards currently have no real project content
+- Existing components and personal content should be preserved where appropriate
+
+Treat the previous audit as your starting baseline, but independently verify findings before making changes.
+
+## NON-NEGOTIABLE REQUIREMENTS
+
+1. Work within the existing project. No unnecessary rewrite.
+2. Preserve all existing authentic personal details and contact information.
+3. Do not invent my projects, achievements, employment history, education or credentials.
+4. Do not copy the reference creator's biography, projects, awards, original creative assets or other identity-specific materials.
+5. Do not assume that proprietary font files or visual assets are licensed for reuse.
+6. Avoid unnecessary dependencies and architectural complexity.
+7. Maintain clean, maintainable React components and properly scoped animation lifecycles.
+8. Do not sacrifice mobile functionality for desktop appearance.
+9. Do not deploy or publish anything without explicit authorization.
+10. Do not claim pixel-perfect parity without browser-based evidence.
+
+## PHASE 0 — SAFETY AND BASELINE
+
+Before editing:
+
+- Inspect the current file structure and application state.
+- Verify the findings in the existing audit.
+- Confirm that the project is not currently a Git repository.
+- Establish a recoverable baseline using a safe versioned backup or an appropriate Git setup without discarding existing files.
+- Record the current dependencies, assets and routes.
+- Inspect the live reference on desktop and mobile.
+- Identify design properties that are verified, estimated or unavailable.
+- Create a prioritized implementation checklist.
+
+Do not proceed with destructive operations without a recoverable baseline.
+
+## PHASE 1 — TYPOGRAPHY AND LAYOUT
+
+Correct the font binding problem in `app/globals.css`.
+
+Establish a consistent typography system using fonts that are legally available to this project.
+
+The reference uses Goga, but do not download or redistribute it without permission.
+
+Preserve the existing Syne/DM Sans combination initially if necessary, then tune measurable font metrics and layout geometry against the reference.
+
+Reconstruct the hero:
+
+- Collision-free name typography
+- Accurate line breaks
+- Correct alignment and positioning
+- Responsive font scaling
+- Stable image geometry
+- Proper layering and clipping
+- No unexpected horizontal overflow
+
+Repair all existing text-overlap problems across the homepage.
+
+Ensure proper heading semantics.
+
+Validate at 1920, 1440, 1280, 1024, 768, 430, 390 and 375px viewport widths, including 200% zoom.
+
+## PHASE 2 — HOMEPAGE VISUAL RECONSTRUCTION
+
+Use the live reference as the visual target.
+
+Reconstruct the following experiences:
+
+1. Full-screen hero with portrait, personal identity, role and associated visual composition.
+2. Large editorial experience statement.
+3. Service-introduction typography and dimensional decorative composition.
+4. Four service sections with appropriate visual gallery structures.
+5. Work invitation and functioning navigation.
+6. Portrait-backed editorial storytelling section.
+7. Reasons-to-collaborate content hierarchy.
+8. Large contact panel.
+9. Character/video footer and responsive identity composition.
+
+Match the verified:
+
+- Section order and layout hierarchy
+- Content widths
+- Heading size and tracking
+- Background colors
+- Spacing and alignment
+- Media sizing and cropping
+- Borders, rounding and overlays
+- Stacking behavior
+- Desktop and mobile composition
+
+Use responsive component arrangements where the reference does, not merely scaled desktop CSS.
+
+Preserve my own writing and images. Where required information or media is unavailable, use clearly identifiable development placeholders without inventing achievements or projects.
+
+## PHASE 3 — MOTION ENGINEERING
+
+Inspect and reproduce the animations actually present in the reference.
+
+Prioritize:
+
+- Hero entrance choreography
+- Scroll-triggered typography
+- Staggered character, word or line reveals where appropriate
+- Scroll-linked positional transformations
+- Image scale and clipping transitions
+- Decorative parallax
+- Service gallery entrances
+- Editorial scene transitions
+- Navigation state changes
+- Hover interactions
+- Button micro-interactions
+- Footer animation behavior
+
+Use GSAP and ScrollTrigger where justified.
+
+Retain Lenis only if it integrates cleanly with the animation system and improves the intended experience.
+
+Repair:
+
+- Incorrect Lenis ticker removal
+- Unscoped GSAP animation cleanup
+- Global ScrollTrigger termination
+- Duplicate timelines after remounts
+- Loader/hero synchronization
+- Responsive ScrollTrigger invalidation
+- Reduced-motion behavior
+- Cursor fallback behavior
+
+Do not create generic animations simply to make the site appear animated.
+
+Every motion effect must have a defined visual purpose and a verification method.
+
+No animation should permanently hide content if JavaScript fails.
+
+## PHASE 4 — MEDIA AND VIDEO SYSTEM
+
+Audit every existing image and video.
+
+Preserve source originals.
+
+Correct aspect ratios, focal points, object positioning and responsive crops.
+
+For video:
+
+- Produce a web-optimized derivative of the existing original where suitable.
+- Move MP4 metadata to the beginning for improved progressive loading.
+- Use a meaningful poster frame.
+- Implement inline muted autoplay only where appropriate.
+- Support looping and correct playback presentation.
+- Provide a graceful paused or failed-playback state.
+- Avoid blank media containers.
+- Prevent unnecessary simultaneous media loading.
+- Respect reduced-motion preferences.
+- Test mobile and desktop browser behavior.
+
+Do not introduce external copyrighted videos or photographs without permission.
+
+## PHASE 5 — WORK PAGE
+
+Implement `/work`.
+
+Reference structure:
+
+- Large editorial introduction
+- Project index on desktop
+- Active-project indicator
+- Case-study identity and metadata
+- Visual galleries
+- Alternating full-width and paired media
+- Responsive mobile stacking
+- Contact/footer integration
+
+The reference contains twelve case studies, but mine does not need twelve unless I supply twelve real projects.
+
+Create a reusable, data-driven project system.
+
+Use real project content already available in the repository.
+
+If the repository does not contain sufficient content, create clearly marked development placeholders and a typed content structure ready for my project information.
+
+Do not fabricate case studies.
+
+Every visible project link must lead to a valid destination or have an explicit non-interactive placeholder treatment during development.
+
+## PHASE 6 — ABOUT PAGE
+
+Implement `/about`.
+
+Follow the reference's structural rhythm:
+
+- Introductory statement
+- Large graphic transition
+- Portrait presentation
+- Biography
+- Approach
+- Professional philosophy
+- Credibility or achievements section
+- Recent updates, if genuine content exists
+- Contact and footer
+
+Adapt everything to my authentic professional experience.
+
+Reuse shared components and tokens where appropriate.
+
+Do not copy reference-specific awards or biography.
+
+## PHASE 7 — RESPONSIVE IMPLEMENTATION
+
+Treat responsiveness as an independent design requirement.
+
+Implement the reference's core responsive behavior:
+
+Desktop:
+- Full editorial compositions
+- Floating navigation
+- Large headings
+- Wide media galleries
+- Desktop-specific motion
+- Project index on the Work page
+
+Mobile:
+- Centered identity
+- Fixed bottom navigation
+- Reflowed typography
+- Simplified hero
+- Stacked project information
+- Correctly scaled media
+- Touch-safe interactions
+- No hidden essential content
+
+Pay particular attention to 479px, 767px and 991px breakpoint behavior observed in the reference, adapting values based on actual layout needs.
+
+Ensure fixed navigation does not cover important content.
+
+## PHASE 8 — VISUAL REGRESSION AND FUNCTIONAL QA
+
+Run the website locally and compare the same reference and local sections at matching viewport dimensions.
+
+When browser inspection is available, capture:
+
+- Initial hero
+- Mid-scroll editorial states
+- Service sections
+- Work gallery
+- About introduction
+- Contact panel
+- Footer
+- Mobile navigation
+- Representative animations
+
+Use measured element bounds, line wrapping, media crops and screenshots to drive corrections.
+
+Prioritize the largest perceptual mismatches first.
+
+Also verify:
+
+- No text collisions
+- No unexpected overflow
+- No broken images
+- No failed internal routes
+- Reliable video behavior
+- GSAP lifecycle cleanup
+- Reduced-motion accessibility
+- Keyboard navigation
+- Console errors
+- Build and typecheck
+- Responsive viewport behavior
+- No major layout shifts
+
+Use screenshot-difference analysis where possible, but interpret results intelligently when imagery and text intentionally differ.
+
+If automated browser tools are unavailable, explicitly report which fidelity checks remain unverified.
+
+## EXECUTION STRATEGY
+
+Execute the phases in dependency order.
+
+Do not make large unrelated changes in a single uncontrolled batch.
+
+After each phase:
+
+1. Run applicable verification checks.
+2. Repair

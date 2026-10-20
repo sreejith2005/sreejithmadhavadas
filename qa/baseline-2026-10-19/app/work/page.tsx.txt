@@ -1,0 +1,62 @@
+import type { Metadata } from "next";
+import SiteNavigation from "@/components/SiteNavigation";
+import SiteFooter from "@/components/SiteFooter";
+import { projects } from "./projects";
+
+export const metadata: Metadata = {
+  title: "Work — Sreejith Madhavadas",
+  description: "Portfolio work. Project details are being prepared for publication.",
+};
+
+export default function WorkPage() {
+  return (
+    <main className="work-page">
+      <SiteNavigation />
+      <header className="work-intro">
+        <p className="work-eyebrow">Portfolio / Work</p>
+        <h1>Work.</h1>
+        <p>Project details are being prepared for this portfolio.</p>
+      </header>
+
+      {projects.length === 0 ? (
+        <section className="work-development" aria-labelledby="development-heading">
+          <p className="work-eyebrow">Coming soon</p>
+          <h2 id="development-heading">Case studies are on the way.</h2>
+          <p>Project stories will be added here with the context, my contribution, and the work itself.</p>
+          <p>No case studies are published here yet.</p>
+        </section>
+      ) : (
+        <div className="work-projects">
+          <aside className="work-index" aria-label="Project index">
+            <p className="work-eyebrow">Projects</p>
+            <ul>{projects.map((project) => (
+              <li key={project.id}><a href={`#${project.id}`}>{project.name}</a></li>
+            ))}</ul>
+          </aside>
+          <div>
+            {projects.map((project) => (
+              <article key={project.id} id={project.id} className="work-project" tabIndex={-1}>
+                <h2>{project.name}</h2>
+                <p className="work-role">{project.role}</p>
+                <p>{project.description}</p>
+                {project.outcomes.length > 0 && <ul>{project.outcomes.map((outcome) => <li key={outcome}>{outcome}</li>)}</ul>}
+                <div className="work-gallery">
+                  {project.media.map((media) => (
+                    <img key={media.src} src={media.src} alt={media.alt} width={media.width} height={media.height} loading="lazy" />
+                  ))}
+                </div>
+                {project.destination && <a href={project.destination.href}>{project.destination.label}</a>}
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <section className="work-contact" aria-labelledby="work-contact-heading">
+        <h2 id="work-contact-heading">Have a workflow in mind?</h2>
+        <a href="mailto:sreejithmadhavadas@gmail.com">Let&apos;s talk <span aria-hidden="true">↗</span></a>
+      </section>
+      <SiteFooter />
+    </main>
+  );
+}

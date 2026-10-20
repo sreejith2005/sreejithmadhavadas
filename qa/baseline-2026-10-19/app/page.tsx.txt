@@ -1,0 +1,232 @@
+"use client";
+
+import BlobField from "@/components/BlobField";
+import HeroAnimator from "@/components/HeroAnimator";
+import ScrollAnimator from "@/components/ScrollAnimator";
+import SiteNavigation from "@/components/SiteNavigation";
+import SiteFooter from "@/components/SiteFooter";
+import MagneticText from "@/components/MagneticText";
+
+export default function Home() {
+  return (
+    <main>
+      <HeroAnimator />
+      <ScrollAnimator />
+      <SiteNavigation home />
+
+      {/* SECTION 2 — HERO */}
+      <section
+        data-hero-section
+        className="hero-section"
+      >
+        {/* Small subtitle */}
+        <span
+          data-hero-subtitle
+          className="font-body hero-subtitle hidden sm:inline"
+        >
+          Co-Founder of Autonova AI LLP
+        </span>
+        <h1 aria-label="Sreejith Madhavadas" className="font-display identity-name hero-name">
+          <span data-hero-first>Sreejith</span>
+          <span data-hero-last>Madhavadas</span>
+        </h1>
+        {/* Portrait foreground */}
+        <img
+          data-hero-photo
+          src="/images/6068668461904237064_119.jpg"
+          alt="Sreejith Madhavadas"
+          width={1448}
+          height={1086}
+          className="hero-photo"
+          style={{ position: "absolute", inset: 0, zIndex: 0 }}
+        />
+      </section>
+
+      {/* SECTION 3 — TAGLINE */}
+      <section
+        className="tagline-section"
+      >
+        <div
+          data-tagline-block
+          className="tagline-copy"
+          style={{ position: "relative", zIndex: 1 }}
+        >
+          <p className="section-eyebrow">Experience / 4+ years</p>
+          <h2 className="font-display tagline-heading" data-tagline-heading>
+            Helping clients <span className="accent-word">build</span> and scale their systems.
+          </h2>
+        </div>
+        <div
+          className="blob-zone"
+          style={{
+            position: "absolute",
+            right: 0,
+            top: 0,
+            width: "45%",
+            height: "100%",
+            pointerEvents: "none",
+            zIndex: 0,
+          }}
+        >
+          <BlobField />
+        </div>
+      </section>
+
+      {/* SECTION 4 — SERVICES INTRO */}
+      <section
+        data-section-intro
+        className="services-intro"
+      >
+        <p className="section-eyebrow">What I do</p>
+        <h2 className="font-display services-intro-heading">AI systems.<br />Built to be useful.</h2>
+      </section>
+
+      {/* SECTION 5 — SERVICE 1 */}
+      <div className="services-list">
+      <ServiceBlock
+        label="AI Automations"
+        desc="Custom AI automation systems for businesses, teams, and operations"
+      />
+
+      {/* SECTION 6 — SERVICE 2 */}
+      <ServiceBlock
+        label="AI Agents"
+        desc="Autonomous AI agents for workflows, support, lead handling, and execution"
+      />
+
+      {/* SECTION 7 — SERVICE 3 */}
+      <ServiceBlock
+        label="Cinematic AI creatives"
+        desc="AI-generated cinematic visuals and creative content"
+      />
+
+      {/* SECTION 8 — SERVICE 4 */}
+      <ServiceBlock
+        label="Workflow Systems"
+        desc="Building AI-powered products focused on real business utility and scale"
+      />
+      </div>
+
+      <section className="work-transition" aria-labelledby="work-heading">
+        <div className="work-title-row">
+          <h2 id="work-heading">Work</h2>
+          <div className="work-folder" aria-hidden="true" />
+        </div>
+        <div className="work-transition-bottom">
+          <p>Case studies are being prepared.<br />A closer look at the work, coming soon.</p>
+          <a className="work-cta" href="/work">Explore work <span aria-hidden="true">&#8599;</span></a>
+        </div>
+      </section>
+
+      <section data-philosophy-section className="philosophy-section" aria-labelledby="philosophy-heading">
+        <img data-philosophy-bg src="/images/6332439334312677529_121.jpg"
+          alt="" width={853} height={1280} loading="lazy" className="philosophy-photo" />
+        <div className="philosophy-copy">
+          <p className="section-eyebrow">The approach</p>
+          <h2 id="philosophy-heading" className="font-display philosophy-heading">Built for real<br />business utility.</h2>
+        </div>
+      </section>
+
+      {/* SECTION 12 — CTA / CONTACT */}
+      <section
+        id="contact"
+        tabIndex={-1}
+        className="cta-section"
+      >
+        <div
+          className="cta-grid"
+          style={{
+            alignItems: "end",
+          }}
+        >
+          <div>
+            <span
+              className="font-body"
+              style={{
+                display: "block",
+                fontSize: "20px",
+                marginBottom: "20px",
+                fontWeight: 400,
+              }}
+            >
+              →
+            </span>
+            <h2
+              className="font-display cta-heading"
+              style={{
+                fontSize: "clamp(32px, 5vw, 56px)",
+                fontWeight: 800,
+                color: "var(--color-text)",
+                lineHeight: 1.1,
+              }}
+            >
+              <span data-cta-line style={{ display: "block" }}>Have a workflow</span>
+              <span data-cta-line style={{ display: "block" }}>in mind?</span>
+            </h2>
+          </div>
+          <div className="cta-talk-wrap" style={{ textAlign: "right" }}>
+            <MagneticText>
+              <a
+                data-cta-talk
+                href="mailto:sreejithmadhavadas@gmail.com"
+                className="font-body"
+                style={{
+                  fontSize: "clamp(24px, 3vw, 40px)",
+                  fontWeight: 500,
+                  color: "var(--color-text)",
+                  textDecoration: "none",
+                  transition: "color 0.3s",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLElement).style.color = "#E85D24")
+                }
+                onMouseLeave={(e) =>
+                  ((e.target as HTMLElement).style.color = "var(--color-text)")
+                }
+              >
+                Let&apos;s talk
+              </a>
+            </MagneticText>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 13 — FOOTER */}
+      <SiteFooter />
+    </main>
+  );
+}
+
+/* Service Block Component */
+function ServiceBlock({
+  label,
+  desc,
+  italic,
+}: {
+  label: string;
+  desc: string;
+  italic?: boolean;
+}) {
+  return (
+    <section
+      className="service-block"
+    >
+      {/* Header */}
+      <div className="service-header">
+        <h3
+          data-service-label
+          className="font-body"
+          style={{ fontStyle: italic ? "italic" : "normal" }}
+        >
+          {label}
+        </h3>
+        <p
+          className="font-body service-description"
+        >
+          {desc}
+        </p>
+      </div>
+
+    </section>
+  );
+}

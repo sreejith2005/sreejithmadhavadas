@@ -1,0 +1,43 @@
+import type { Metadata } from "next";
+import { Syne, DM_Sans } from "next/font/google";
+import "./globals.css";
+import CustomCursor from "@/components/CustomCursor";
+import LenisProvider from "@/components/LenisProvider";
+import PageLoader from "@/components/PageLoader";
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["800"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Sreejith Madhavadas — Co-Founder of Autonova AI LLP",
+  description:
+    "AI Automation Engineer & Founder. Building intelligent systems, agents, and workflows.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
+      <body>
+          <PageLoader />
+          <CustomCursor />
+          <LenisProvider />
+          {children}
+        </body>
+    </html>
+  );
+}

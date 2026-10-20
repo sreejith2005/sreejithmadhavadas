@@ -1,0 +1,33 @@
+﻿import type { Metadata } from "next";
+import SiteNavigation from "@/components/SiteNavigation";
+import SiteFooter from "@/components/SiteFooter";
+import ContactSection from "@/components/ContactSection";
+export const metadata: Metadata = {
+  title: "About — Sreejith Madhavadas",
+  description: "AI engineer and app builder with 3+ years of experience. Currently at MK Jewels; previously Co-Founder & CTO at Autonova.",
+  openGraph: {
+    title: "About — Sreejith Madhavadas",
+    description: "I tend to build the missing piece. AI engineer and app builder with 3+ years of experience, currently at MK Jewels.",
+    images: [{ url: "/opengraph-image.jpg", width: 1200, height: 630, alt: "Sreejith Madhavadas — AI Engineer & App Builder" }],
+  },
+};
+const experience = [
+  { company: "MK Jewels", role: "AI Integration Executive", dates: "June 2026–Present", detail: "AI integration and internal business applications. Built MK1, a web and native Android platform for company-wide employee operations and workflows." },
+  { company: "Autonova", role: "Co-Founder & CTO", dates: "February 2025–June 2026", detail: "Automation, solution design, technical implementation, and client work across industries. Worked from discovery and sales through delivery and helping clients use the systems." },
+  { company: "BARC", role: "Project Trainee", dates: "December 2024–January 2025", detail: "Python backend APIs with LiveKit, PostgreSQL data storage, API testing, documentation, and deployment across Linux and Windows." },
+  { company: "CODSOFT", role: "AI Intern", dates: "November–December 2024", detail: "Recommendation systems using collaborative filtering and interactive AI applications, including a chatbot and algorithmic decision-making." },
+];
+export default function AboutPage() {
+  return (
+    <main id="main-content" className="about-page">
+      <SiteNavigation />
+      <header className="page-intro about-intro"><p className="section-eyebrow">About / Sreejith Madhavadas</p><h1>I tend to build<br />the missing piece.</h1><p>AI Engineer &amp; App Builder · 3+ years</p></header>
+      <figure className="about-portrait"><img src="/images/6068668461904237064_119.jpg" alt="Sreejith Madhavadas at his desk" width={1448} height={1086} className="hero-photo" /><figcaption>Sreejith Madhavadas / Somewhere between the problem and the product.</figcaption></figure>
+      <section className="about-section" aria-labelledby="biography-heading"><h2 id="biography-heading">The missing piece.</h2><div className="biography-copy"><p className="about-statement">There’s a point where “we’ll manage it in a spreadsheet” becomes a product brief.</p><p>I’m Sreejith, an AI engineer and app builder with 3+ years of experience. At MK Jewels, I built MK1: a web and Android platform that brings tasks, leave, store walk-ins, customer records, and workflows into one place.</p><p>Before that, I co-founded Autonova, working across the less separable parts of building a business: understanding the problem, designing the solution, shipping it, and helping people use it.</p><p>My work sits between AI, software, and the everyday details that decide whether either is useful. Sometimes that means an agent. Sometimes it means an app. Often, it means getting the two to work together.</p></div></section>
+      <section className="about-section" aria-labelledby="experience-heading"><h2 id="experience-heading">Along the way.</h2><div className="experience-list">{experience.map(item => <article className="experience-item" key={item.company}><p className="experience-dates">{item.dates}</p><h3>{item.role}</h3><p className="experience-company">{item.company}</p><p>{item.detail}</p></article>)}</div></section>
+      <section className="about-section" aria-labelledby="skills-heading"><h2 id="skills-heading">A working toolkit.</h2><div className="toolkit"><div><h3>AI &amp; orchestration</h3><p>Agentic AI, LLM orchestration, prompt engineering, n8n, APIs, and CRM integrations.</p></div><div><h3>Building &amp; shipping</h3><p>Python, web and native Android applications, PostgreSQL, Docker, CI/CD, testing, and deployment.</p></div><div><h3>From problem to use</h3><p>Solution design, project management, client discovery, implementation, and AI content creation.</p></div></div></section>
+      <section className="about-section" aria-labelledby="education-heading"><h2 id="education-heading">Learning. Sharing.</h2><div className="toolkit"><div><h3>B.Tech (Hons.)</h3><p>Computer Science and Engineering in AI &amp; ML<br />Vidyalankar Institute of Technology, Mumbai University<br />2026 · CGPA 8.8/10</p></div><div className="workshop-highlight"><p className="section-eyebrow">Beyond the build</p><p>Conducted a two-day Agentic AI workshop at VIT for 80+ students and professionals.</p></div></div></section>
+      <ContactSection /><SiteFooter />
+    </main>
+  );
+}

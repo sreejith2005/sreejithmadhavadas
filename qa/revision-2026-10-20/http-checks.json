@@ -1,0 +1,19 @@
+[
+  {
+    "route": "/",
+    "status": 200
+  },
+  {
+    "route": "/work",
+    "status": 200
+  },
+  {
+    "route": "/about",
+    "status": 200
+  },
+  {
+    "asset": "FMS screenshot",
+    "status": 200,
+    "matchesOriginal": true
+  }
+]

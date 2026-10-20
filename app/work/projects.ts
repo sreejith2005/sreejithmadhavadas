@@ -1,0 +1,34 @@
+﻿// Public portfolio facts approved in content/APPROVED_CONTENT.md.
+export type Project = {
+  id: string; name: string; company: string; role: string; platforms: string; status: string;
+  description: string; contribution: string;
+  capabilities: readonly { title: string; description: string }[];
+  workflow: string; assistant: string; deployment: string; evolution: string; approvalSource: string;
+  media: { src: string; width: number; height: number; alt: string; caption: string };
+};
+export const projects: readonly Project[] = [{
+  id: "mk1", name: "MK1 — Internal Operations Platform", company: "MK Jewels",
+  role: "Platform builder / developer", platforms: "Web + native Android", status: "In internal use across MK Jewels",
+  description: "An internal platform for the everyday work of a company spread across stores in different cities. MK1 brings task management, employee operations, customer information, and connected workflows into one application.",
+  contribution: "I built the web and native Android platform, bringing individual employee accounts, hierarchical access, operational records, task coordination, a visual FMS workflow builder, and an in-app AI assistant into one working product.",
+  capabilities: [
+    { title: "People & access", description: "Individual employee accounts with hierarchical, role-based visibility and permissions for different responsibilities and management levels." },
+    { title: "Tasks & delegation", description: "Task delegation, tracking, and recurring tasks give employees and managers a central view of work." },
+    { title: "Employee operations", description: "Leave management and employee operational records sit alongside day-to-day tasks." },
+    { title: "Customers & store activity", description: "Store walk-in tracking and a customer database keep operational information in one place." },
+    { title: "Forms & workflows", description: "Forms connect to internal processes, supported by an FMS tracker and visual workflow builder." },
+    { title: "In-app AI assistance", description: "An assistant lets employees ask questions about the application and its information." },
+  ],
+  workflow: "The FMS builder connects the application’s forms and tasks through visual workflow orchestration. Its interaction concept is comparable to tools such as n8n or Make: connected steps help coordinate an internal process. Within MK1, those workflows sit alongside an FMS tracker and the operational work they support.",
+  assistant: "The AI assistant is available inside MK1 for questions about the application and its information. It adds a conversational way to ask about the work already brought together in the platform.",
+  deployment: "MK1 is in internal use across MK Jewels. The employee operations application supports 100+ employees, with individual accounts across the company’s stores. Delivered capabilities include centralized task visibility, workflow coordination, and employee and customer operational records.",
+  evolution: "I subsequently began adapting this work into a SaaS product, initially for jewellers. The direction is to expand to retailers and eventually other types of businesses. That productization work is a separate evolution of the internal platform already in use at MK Jewels.",
+  approvalSource: "content/APPROVED_CONTENT.md",
+  media: {
+    src: "/images/Screenshot 2026-10-20 000040.png",
+    width: 1917,
+    height: 1078,
+    alt: "MK1 FMS builder showing connected workflow steps and a form configuration panel",
+    caption: "FMS builder / Actual application screenshot",
+  },
+}];

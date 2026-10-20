@@ -1,0 +1,10 @@
+[
+  "app\\globals.css",
+  "app\\layout.tsx",
+  "app\\page.tsx",
+  "components\\SiteFooter.tsx",
+  "components\\SiteNavigation.tsx",
+  "app\\about\\page.tsx",
+  "app\\work\\page.tsx",
+  "app\\work\\projects.ts"
+]

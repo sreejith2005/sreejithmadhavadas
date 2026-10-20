@@ -1,0 +1,56 @@
+import type { Metadata } from "next";
+import SiteNavigation from "@/components/SiteNavigation";
+import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "About — Sreejith Madhavadas",
+  description: "AI Automation Engineer & Founder. Co-Founder of Autonova AI LLP.",
+};
+
+export default function AboutPage() {
+  return (
+    <main className="about-page">
+      <SiteNavigation />
+      <header className="about-intro">
+        <p className="about-eyebrow">About / Sreejith Madhavadas</p>
+        <h1>AI Automation Engineer &amp; Founder.</h1>
+        <p>Building intelligent systems, agents, and workflows.</p>
+      </header>
+
+      <figure className="about-portrait">
+        <img
+          src="/images/6068668461904237064_119.jpg"
+          alt="Sreejith Madhavadas"
+          width={1448}
+          height={1086}
+          className="hero-photo"
+        />
+        <figcaption>Sreejith Madhavadas</figcaption>
+      </figure>
+
+      <section className="about-section" aria-labelledby="about-biography-heading">
+        <h2 id="about-biography-heading">Biography</h2>
+        <div>
+          <p className="about-statement">Co-Founder of Autonova AI LLP</p>
+
+        </div>
+      </section>
+
+      <section className="about-section" aria-labelledby="about-approach-heading">
+        <h2 id="about-approach-heading">Approach</h2>
+        <p className="about-statement">Building AI-powered products focused on real business utility and scale</p>
+      </section>
+
+      <section className="about-section about-philosophy" aria-labelledby="about-philosophy-heading">
+        <h2 id="about-philosophy-heading">Philosophy</h2>
+        <p className="about-statement">Built for real business utility.</p>
+      </section>
+
+      <section className="about-contact" aria-labelledby="about-contact-heading">
+        <h2 id="about-contact-heading">Have a workflow in mind?</h2>
+        <a href="mailto:sreejithmadhavadas@gmail.com">Let&apos;s talk <span aria-hidden="true">↗</span></a>
+      </section>
+      <SiteFooter />
+    </main>
+  );
+}

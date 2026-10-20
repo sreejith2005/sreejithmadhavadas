@@ -1,0 +1,66 @@
+[
+  {
+    "attempts": "1",
+    "button": false,
+    "opacity": "0",
+    "paused": true,
+    "poster": 1920,
+    "scenario": "autoplay-rejection",
+    "src": "/vids/Character_bobbing_head_web.mp4"
+  },
+  {
+    "attempts": "1",
+    "opacity": "0",
+    "paused": true,
+    "scenario": "rejection-after-reentry"
+  },
+  {
+    "button": false,
+    "opacity": "0",
+    "paused": true,
+    "poster": 1920,
+    "scenario": "media-404"
+  },
+  {
+    "button": false,
+    "injectedPreference": "true",
+    "opacity": "0",
+    "paused": true,
+    "scenario": "simulated-reduced-motion",
+    "src": null
+  },
+  {
+    "bodyVisible": "visible",
+    "heading": "I tend to buildthe missing piece.",
+    "path": "/about",
+    "scenario": "app-scripts-suppressed",
+    "scripts": 0,
+    "videoSource": null
+  },
+  {
+    "bodyVisible": "visible",
+    "heading": "SreejithMadhavadas",
+    "path": "/",
+    "scenario": "app-scripts-suppressed",
+    "scripts": 0,
+    "videoSource": null
+  },
+  {
+    "paused": false,
+    "playing": "true",
+    "scenario": "visibility-before"
+  },
+  {
+    "injectedHidden": "true",
+    "opacity": "0",
+    "paused": true,
+    "playing": "false",
+    "scenario": "simulated-background"
+  },
+  {
+    "injectedHidden": "false",
+    "paused": false,
+    "playing": "true",
+    "scenario": "simulated-foreground"
+  }
+]

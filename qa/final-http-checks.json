@@ -1,0 +1,109 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "h1Count": 1,
+    "projectCount": 0,
+    "description": "AI systems, useful apps, and the workflows between them. Sreejith Madhavadas, AI engineer and app builder with 3+ years of experience.",
+    "ogTitle": "Sreejith Madhavadas \u2014 AI Engineer & App Builder",
+    "ogImage": "http://localhost:3000/opengraph-image.jpg?7960f2dd7bd951c8",
+    "icons": [
+      "/icon.svg?c85bbf53c3b1289a"
+    ],
+    "links": [
+      "#main-content",
+      "/",
+      "/work",
+      "/about",
+      "#contact",
+      "/work#mk1",
+      "/about",
+      "mailto:sreejithmadhavadas@gmail.com",
+      "https://github.com/sreejith2005",
+      "https://www.linkedin.com/in/sreejith-madhavadas/"
+    ],
+    "checks": "passed"
+  },
+  {
+    "route": "/work",
+    "status": 200,
+    "h1Count": 1,
+    "projectCount": 1,
+    "description": "MK1: the web and native Android operations platform I built for MK Jewels, bringing employee operations, tasks, connected workflows, and in-app AI assistance together.",
+    "ogTitle": "MK1 \u2014 Work by Sreejith Madhavadas",
+    "ogImage": "http://localhost:3000/opengraph-image.jpg",
+    "icons": [
+      "/icon.svg?c85bbf53c3b1289a"
+    ],
+    "links": [
+      "#main-content",
+      "/",
+      "/work",
+      "/about",
+      "/#contact",
+      "mailto:sreejithmadhavadas@gmail.com",
+      "https://github.com/sreejith2005",
+      "https://www.linkedin.com/in/sreejith-madhavadas/"
+    ],
+    "checks": "passed"
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "h1Count": 1,
+    "projectCount": 0,
+    "description": "AI engineer and app builder with 3+ years of experience. Currently at MK Jewels; previously Co-Founder & CTO at Autonova.",
+    "ogTitle": "About \u2014 Sreejith Madhavadas",
+    "ogImage": "http://localhost:3000/opengraph-image.jpg",
+    "icons": [
+      "/icon.svg?c85bbf53c3b1289a"
+    ],
+    "links": [
+      "#main-content",
+      "/",
+      "/work",
+      "/about",
+      "/#contact",
+      "mailto:sreejithmadhavadas@gmail.com",
+      "https://github.com/sreejith2005",
+      "https://www.linkedin.com/in/sreejith-madhavadas/"
+    ],
+    "checks": "passed"
+  },
+  {
+    "asset": "/icon.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": null
+  },
+  {
+    "asset": "/opengraph-image.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": null
+  },
+  {
+    "asset": "/images/6068668461904237064_119.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": "311036"
+  },
+  {
+    "asset": "/images/6332439334312677529_121.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": "148433"
+  },
+  {
+    "asset": "/vids/Character_bobbing_head_poster.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": "301402"
+  },
+  {
+    "asset": "/vids/Character_bobbing_head_web.mp4",
+    "status": 200,
+    "contentType": "video/mp4",
+    "bytes": "5167960"
+  }
+]

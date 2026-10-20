@@ -1,0 +1,542 @@
+[
+  {
+    "clientWidth": 1425,
+    "height": 900,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 900,
+        "cls": "hero-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "tagline-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "areas-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 899,
+        "cls": "work-transition",
+        "height": 900,
+        "scrollHeight": 899
+      },
+      {
+        "clientHeight": 900,
+        "cls": "philosophy-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "cta-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "identity-footer",
+        "height": 900,
+        "scrollHeight": 900
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "clientWidth": 1425,
+    "height": 900,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 900,
+        "cls": "case-cover",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "cta-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "identity-footer",
+        "height": 900,
+        "scrollHeight": 900
+      }
+    ],
+    "path": "/work",
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "clientWidth": 1425,
+    "height": 900,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 900,
+        "cls": "about-portrait",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "cta-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "identity-footer",
+        "height": 900,
+        "scrollHeight": 900
+      }
+    ],
+    "path": "/about",
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "clientWidth": 1009,
+    "height": 768,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 768,
+        "cls": "hero-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "tagline-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "areas-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 767,
+        "cls": "work-transition",
+        "height": 768,
+        "scrollHeight": 767
+      },
+      {
+        "clientHeight": 768,
+        "cls": "philosophy-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "cta-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "identity-footer",
+        "height": 768,
+        "scrollHeight": 768
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 1009,
+    "width": 1024
+  },
+  {
+    "clientWidth": 1009,
+    "height": 768,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 768,
+        "cls": "case-cover",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "cta-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "identity-footer",
+        "height": 768,
+        "scrollHeight": 768
+      }
+    ],
+    "path": "/work",
+    "scrollWidth": 1009,
+    "width": 1024
+  },
+  {
+    "clientWidth": 1009,
+    "height": 768,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 768,
+        "cls": "about-portrait",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "cta-section",
+        "height": 768,
+        "scrollHeight": 768
+      },
+      {
+        "clientHeight": 768,
+        "cls": "identity-footer",
+        "height": 768,
+        "scrollHeight": 768
+      }
+    ],
+    "path": "/about",
+    "scrollWidth": 1009,
+    "width": 1024
+  },
+  {
+    "clientWidth": 753,
+    "height": 900,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 900,
+        "cls": "hero-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "tagline-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "areas-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 899,
+        "cls": "work-transition",
+        "height": 900,
+        "scrollHeight": 899
+      },
+      {
+        "clientHeight": 900,
+        "cls": "philosophy-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "cta-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "identity-footer",
+        "height": 900,
+        "scrollHeight": 900
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "clientWidth": 753,
+    "height": 900,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 900,
+        "cls": "case-cover",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "cta-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "identity-footer",
+        "height": 900,
+        "scrollHeight": 900
+      }
+    ],
+    "path": "/work",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "clientWidth": 753,
+    "height": 900,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 900,
+        "cls": "about-portrait",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "cta-section",
+        "height": 900,
+        "scrollHeight": 900
+      },
+      {
+        "clientHeight": 900,
+        "cls": "identity-footer",
+        "height": 900,
+        "scrollHeight": 900
+      }
+    ],
+    "path": "/about",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "clientWidth": 375,
+    "height": 844,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 844,
+        "cls": "hero-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "tagline-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "areas-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 843,
+        "cls": "work-transition",
+        "height": 844,
+        "scrollHeight": 843
+      },
+      {
+        "clientHeight": 844,
+        "cls": "philosophy-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "cta-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "identity-footer",
+        "height": 844,
+        "scrollHeight": 844
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "clientWidth": 375,
+    "height": 844,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 844,
+        "cls": "case-cover",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "cta-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "identity-footer",
+        "height": 844,
+        "scrollHeight": 844
+      }
+    ],
+    "path": "/work",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "clientWidth": 375,
+    "height": 844,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 844,
+        "cls": "about-portrait",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "cta-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "identity-footer",
+        "height": 844,
+        "scrollHeight": 844
+      }
+    ],
+    "path": "/about",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "clientWidth": 360,
+    "height": 844,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 844,
+        "cls": "hero-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "tagline-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "areas-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 843,
+        "cls": "work-transition",
+        "height": 844,
+        "scrollHeight": 843
+      },
+      {
+        "clientHeight": 844,
+        "cls": "philosophy-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "cta-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "identity-footer",
+        "height": 844,
+        "scrollHeight": 844
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 360,
+    "width": 375
+  },
+  {
+    "clientWidth": 360,
+    "height": 844,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 844,
+        "cls": "case-cover",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "cta-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "identity-footer",
+        "height": 844,
+        "scrollHeight": 844
+      }
+    ],
+    "path": "/work",
+    "scrollWidth": 360,
+    "width": 375
+  },
+  {
+    "clientWidth": 360,
+    "height": 844,
+    "imageFailures": [],
+    "panels": [
+      {
+        "clientHeight": 844,
+        "cls": "about-portrait",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "cta-section",
+        "height": 844,
+        "scrollHeight": 844
+      },
+      {
+        "clientHeight": 844,
+        "cls": "identity-footer",
+        "height": 844,
+        "scrollHeight": 844
+      }
+    ],
+    "path": "/about",
+    "scrollWidth": 360,
+    "width": 375
+  }
+]

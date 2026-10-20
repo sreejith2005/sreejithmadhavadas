@@ -1,0 +1,40 @@
+import type { Metadata } from "next";
+import SiteNavigation from "@/components/SiteNavigation";
+import SiteFooter from "@/components/SiteFooter";
+import ContactSection from "@/components/ContactSection";
+import ProjectMedia from "@/components/ProjectMedia";
+import { projects } from "./projects";
+export const metadata: Metadata = {
+  title: "Work — Sreejith Madhavadas",
+  description: "MK1: the web and native Android operations platform I built for MK Jewels, bringing employee operations, tasks, connected workflows, and in-app AI assistance together.",
+  openGraph: {
+    title: "MK1 — Work by Sreejith Madhavadas",
+    description: "The internal web and native Android operations platform I built for MK Jewels. People, tasks, connected workflows, and in-app AI assistance.",
+    images: [{ url: "/opengraph-image.jpg", width: 1200, height: 630, alt: "Sreejith Madhavadas — AI Engineer & App Builder" }],
+  },
+};
+export default function WorkPage() {
+  return (
+    <main id="main-content" className="work-page">
+      <SiteNavigation />
+      <header className="page-intro work-intro"><p className="section-eyebrow">Selected work / 01</p><h1>Built. In use.</h1><p>A closer look at the work behind one company’s everyday operations.</p></header>
+      {projects.map(project => <article id={project.id} className="case-study" key={project.id} tabIndex={-1}>
+        <header className="case-cover">
+          <div className="case-cover-heading"><div><p className="section-eyebrow">{project.company} / Internal product</p><h2>MK1 <span>Internal Operations Platform</span></h2></div><p><span>Web + native Android</span><span>In internal use</span></p></div>
+          <ProjectMedia media={project.media} />
+        </header>
+        <div className="case-body">
+          <div className="project-facts"><div><h3>My role</h3><p>{project.role}</p></div><div><h3>Platforms</h3><p>{project.platforms}</p></div><div><h3>Status</h3><p>{project.status}</p></div></div>
+          <section className="case-section" aria-labelledby="overview-heading"><div className="case-section-label"><span>01</span><h3 id="overview-heading">Overview &amp; context</h3></div><div className="case-copy"><p className="case-lead">{project.description}</p><p>Employees across stores need individual accounts, different levels of access, and a shared place to coordinate work. MK1 brings those operational needs into one platform.</p></div></section>
+          <section className="case-section" aria-labelledby="contribution-heading"><div className="case-section-label"><span>02</span><h3 id="contribution-heading">My contribution</h3></div><div className="case-copy"><p>{project.contribution}</p></div></section>
+          <section className="case-capabilities" aria-labelledby="capabilities-heading"><div className="case-section-label"><span>03</span><h3 id="capabilities-heading">What the platform handles</h3></div><div className="capability-grid">{project.capabilities.map((capability, index) => <div className="capability" key={capability.title}><p className="capability-number" aria-hidden="true">/ 0{index + 1}</p><h4>{capability.title}</h4><p>{capability.description}</p></div>)}</div></section>
+          <section className="case-section" aria-labelledby="workflow-heading"><div className="case-section-label"><span>04</span><h3 id="workflow-heading">FMS &amp; connected workflows</h3></div><div className="case-copy"><p>{project.workflow}</p><figure className="workflow-diagram"><figcaption>Conceptual capability map</figcaption><div className="workflow-path"><span>Forms</span><span aria-hidden="true">→</span><span>FMS workflows</span><span aria-hidden="true">→</span><span>Tasks</span></div><p>A view of connected capabilities; not a production screen or technical architecture.</p></figure></div></section>
+          <section className="case-section" aria-labelledby="assistant-heading"><div className="case-section-label"><span>05</span><h3 id="assistant-heading">In-app AI assistance</h3></div><div className="case-copy"><p>{project.assistant}</p></div></section>
+          <section className="case-section" aria-labelledby="deployment-heading"><div className="case-section-label"><span>06</span><h3 id="deployment-heading">Internal deployment &amp; access</h3></div><div className="case-copy"><p>{project.deployment}</p><p className="access-note"><span aria-hidden="true">↳ </span>Internal platform — access restricted to MK Jewels employees.</p></div></section>
+          <section className="case-section case-evolution" aria-labelledby="evolution-heading"><div className="case-section-label"><span>07</span><h3 id="evolution-heading">Evolution toward SaaS</h3></div><div className="case-copy"><p className="section-eyebrow">Productization in progress</p><p>{project.evolution}</p></div></section>
+        </div>
+      </article>)}
+      <ContactSection /><SiteFooter />
+    </main>
+  );
+}

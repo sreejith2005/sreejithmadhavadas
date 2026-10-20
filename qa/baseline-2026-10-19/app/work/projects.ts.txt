@@ -1,0 +1,21 @@
+// Populate only with public-display-approved details and project-specific media.
+// Keep approvalSource as a repository path identifying the supplied content.
+export type ProjectMedia = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+export type Project = {
+  id: string;
+  name: string;
+  role: string;
+  description: string;
+  outcomes: readonly string[];
+  destination?: { label: string; href: string };
+  media: readonly ProjectMedia[];
+  approvalSource: string;
+};
+
+export const projects: readonly Project[] = [];
