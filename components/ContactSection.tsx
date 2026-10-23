@@ -1,4 +1,14 @@
-export default function ContactSection() {
+export default function ContactSection({ cinematic = false }: { cinematic?: boolean }) {
+  if (cinematic) return (
+    <section id="contact" data-scene tabIndex={-1} className="contact-finale" aria-labelledby="contact-heading">
+      <div className="finale-top"><p className="section-eyebrow">Contact</p><p>Roles, collaborations &amp; interesting problems.</p></div>
+      <h2 id="contact-heading" data-arrival>Let&rsquo;s talk<span aria-hidden="true">.</span></h2>
+      <div className="finale-bottom">
+        <a className="finale-email" href="mailto:sreejithmadhavadas@gmail.com"><span>sreejithmadhavadas@gmail.com</span><span aria-hidden="true">&#8599;</span></a>
+        <div className="profile-links"><a href="https://github.com/sreejith2005">GitHub &#8599;</a><a href="https://www.linkedin.com/in/sreejith-madhavadas/">LinkedIn &#8599;</a></div>
+      </div>
+    </section>
+  );
   return (
     <section id="contact" data-scene tabIndex={-1} className="cta-section" aria-labelledby="contact-heading">
       <div className="cta-grid">

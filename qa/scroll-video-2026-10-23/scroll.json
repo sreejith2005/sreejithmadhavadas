@@ -1,0 +1,11 @@
+{
+  "inputDown": 8000,
+  "down": 3599,
+  "inputUp": -2000,
+  "up": 2701,
+  "keyboard": {
+    "position": 4545,
+    "max": 7052
+  },
+  "errors": []
+}

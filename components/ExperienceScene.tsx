@@ -1,6 +1,7 @@
 /** Original vector sculpture; no reference artwork or product UI is reproduced. */
 export default function ExperienceScene() {
   return <section id="experience" className="experience-scene" aria-labelledby="experience-heading">
+    <div className="experience-stage">
     <div className="experience-statement">
       <p className="section-eyebrow">Experience</p>
       <h2 id="experience-heading"><span>3+ years</span><span>connecting <em>AI,</em></span><span><em className="experience-pill">apps</em> &amp; the</span><span>workflows between.</span></h2>
@@ -25,5 +26,6 @@ export default function ExperienceScene() {
       </svg>
     </div>
     <p className="experience-footnote">AI systems. Useful apps. Connected work.</p>
+    </div>
   </section>;
 }

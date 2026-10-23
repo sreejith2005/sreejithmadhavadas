@@ -1,0 +1,267 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.797588",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517371",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.236547",
+        "clip": "inset(14.4171% 3.0894%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517371",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      }
+    ],
+    "reverse": true,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.81436",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.529104",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.529104",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.529104",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      }
+    ],
+    "reverse": true,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.798333",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.798333",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.236835",
+        "clip": "inset(14.4697% 3.1007%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      }
+    ],
+    "reverse": false,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.798819",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517717",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517717",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517717",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517717",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      }
+    ],
+    "reverse": true,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "width": 375,
+    "height": 844,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.80099",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.519751",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.238511",
+        "clip": "inset(14.7792% 3.167%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.519751",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      }
+    ],
+    "reverse": true,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.902103",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.594191",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.285558",
+        "clip": "inset(25.3633% 5.435%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.594191",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      }
+    ],
+    "reverse": true,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "noJS": {
+      "clip": "none",
+      "image": true
+    },
+    "services": 4
+  }
+]

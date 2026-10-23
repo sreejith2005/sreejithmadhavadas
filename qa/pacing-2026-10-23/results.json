@@ -1,0 +1,248 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "sections": [
+      {
+        "section": "experience-scene",
+        "height": 1620,
+        "y": 900
+      },
+      {
+        "section": "areas-section",
+        "height": 1800,
+        "y": 2520
+      },
+      {
+        "section": "work-invitation",
+        "height": 1398,
+        "y": 4320
+      },
+      {
+        "section": "philosophy-section",
+        "height": 900,
+        "y": 5717.703125
+      },
+      {
+        "section": "cta-section",
+        "height": 900,
+        "y": 6617.703125
+      }
+    ],
+    "errors": [],
+    "reverse": true,
+    "reduced": "none",
+    "overflow": false,
+    "photo": {
+      "width": 480,
+      "height": 720,
+      "naturalWidth": 853,
+      "naturalHeight": 1280
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "sections": [
+      {
+        "section": "experience-scene",
+        "height": 1224,
+        "y": 844
+      },
+      {
+        "section": "areas-section",
+        "height": 1477,
+        "y": 2067.796875
+      },
+      {
+        "section": "work-invitation",
+        "height": 971,
+        "y": 3544.796875
+      },
+      {
+        "section": "philosophy-section",
+        "height": 902,
+        "y": 4515.390625
+      },
+      {
+        "section": "cta-section",
+        "height": 844,
+        "y": 5417.78125
+      }
+    ],
+    "errors": [],
+    "reverse": true,
+    "reduced": "none",
+    "overflow": false,
+    "photo": {
+      "width": 342,
+      "height": 513,
+      "naturalWidth": 853,
+      "naturalHeight": 1280
+    }
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "sections": [
+      {
+        "section": "experience-scene",
+        "height": 1382,
+        "y": 768
+      },
+      {
+        "section": "areas-section",
+        "height": 1536,
+        "y": 2150.390625
+      },
+      {
+        "section": "work-invitation",
+        "height": 1226,
+        "y": 3686.390625
+      },
+      {
+        "section": "philosophy-section",
+        "height": 771,
+        "y": 4912.296875
+      },
+      {
+        "section": "cta-section",
+        "height": 768,
+        "y": 5683.703125
+      }
+    ],
+    "errors": [],
+    "reverse": true,
+    "reduced": "none",
+    "overflow": false,
+    "photo": {
+      "width": 407,
+      "height": 611,
+      "naturalWidth": 853,
+      "naturalHeight": 1280
+    }
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "sections": [
+      {
+        "section": "experience-scene",
+        "height": 1620,
+        "y": 900
+      },
+      {
+        "section": "areas-section",
+        "height": 1800,
+        "y": 2520
+      },
+      {
+        "section": "work-invitation",
+        "height": 1350,
+        "y": 4320
+      },
+      {
+        "section": "philosophy-section",
+        "height": 900,
+        "y": 5670
+      },
+      {
+        "section": "cta-section",
+        "height": 900,
+        "y": 6570
+      }
+    ],
+    "errors": [],
+    "reverse": true,
+    "reduced": "none",
+    "overflow": false,
+    "photo": {
+      "width": 306,
+      "height": 459,
+      "naturalWidth": 853,
+      "naturalHeight": 1280
+    }
+  },
+  {
+    "width": 375,
+    "height": 844,
+    "sections": [
+      {
+        "section": "experience-scene",
+        "height": 1224,
+        "y": 844
+      },
+      {
+        "section": "areas-section",
+        "height": 1477,
+        "y": 2067.796875
+      },
+      {
+        "section": "work-invitation",
+        "height": 971,
+        "y": 3544.796875
+      },
+      {
+        "section": "philosophy-section",
+        "height": 880,
+        "y": 4515.390625
+      },
+      {
+        "section": "cta-section",
+        "height": 844,
+        "y": 5395.125
+      }
+    ],
+    "errors": [],
+    "reverse": true,
+    "reduced": "none",
+    "overflow": false,
+    "photo": {
+      "width": 327,
+      "height": 491,
+      "naturalWidth": 853,
+      "naturalHeight": 1280
+    }
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "sections": [
+      {
+        "section": "experience-scene",
+        "height": 850,
+        "y": 400
+      },
+      {
+        "section": "areas-section",
+        "height": 1132,
+        "y": 1250
+      },
+      {
+        "section": "work-invitation",
+        "height": 1098,
+        "y": 2381.875
+      },
+      {
+        "section": "philosophy-section",
+        "height": 664,
+        "y": 3479.59375
+      },
+      {
+        "section": "cta-section",
+        "height": 543,
+        "y": 4143.546875
+      }
+    ],
+    "errors": [],
+    "reverse": true,
+    "reduced": "none",
+    "overflow": false,
+    "photo": {
+      "width": 336,
+      "height": 504,
+      "naturalWidth": 853,
+      "naturalHeight": 1280
+    }
+  }
+]

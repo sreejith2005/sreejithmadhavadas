@@ -1,4 +1,4 @@
-/* Reference-led scenes. Selectors are limited to Experience, Home Work, and the case study. */
+/* Shared Home journey and the Work case study. */
 .experience-scene { position: relative; isolation: isolate; overflow: hidden; min-height: max(850px, 100svh); padding: 82px var(--gutter) 40px; background: #f6eee4; }
 .experience-scene::before, .work-invitation::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; box-shadow: inset 0 0 100px 5px #eaa27540; }
 .experience-statement { position: relative; z-index: 2; width: fit-content; margin-left: 21%; }
@@ -15,27 +15,12 @@
 .invitation-intro { position: relative; z-index: 3; text-align: center; font-size: 16px; }
 .invitation-word { position: absolute; z-index: -1; left: -2%; top: 50%; margin-top: -.59em; width: 104%; color: #e5b492; font-family: var(--font-dm-sans), sans-serif; font-size: 35vw; font-weight: 500; line-height: 1; letter-spacing: -.085em; white-space: nowrap; }
 .invitation-word > span { position: absolute; right: 2%; top: -.03em; font-size: .36em; letter-spacing: 0; }
-.work-aperture { display: block; position: relative; z-index: 2; width: min(500px, 52vw); aspect-ratio: 1; margin: 24px auto 36px; text-decoration: none; border-radius: 50%; }
-.aperture-motion { width: 100%; height: 100%; }
-.aperture-surface { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 50%; background: #332b27; box-shadow: 0 22px 50px -25px #4b2a1f80, 0 0 0 1px #9f65414d; transition: border-radius .3s cubic-bezier(.22,1,.36,1), transform .3s cubic-bezier(.22,1,.36,1); }
-.aperture-surface img { width: 100%; height: 100%; object-fit: cover; object-position: 48% center; opacity: .68; transition: opacity .2s ease-out, transform .3s cubic-bezier(.22,1,.36,1); }
-.aperture-surface::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 35%, #17110cd9 100%); }
-.aperture-identity { position: absolute; z-index: 1; bottom: 15%; left: 0; width: 100%; text-align: center; color: #fff3e6; font-size: clamp(46px, 5.4vw, 78px); line-height: 1; font-weight: 500; letter-spacing: -.025em; }
-.aperture-identity > span { display: block; margin-top: 14px; font-size: 14px; line-height: 1.5; letter-spacing: 0; }
-.aperture-identity > span > span { display: inline-block; margin-left: 8px; }
-.work-aperture:focus-visible { outline: 3px solid #b44c26; outline-offset: 12px; }
-.work-aperture:focus-visible img { opacity: 1; }
 .invitation-bottom { position: relative; z-index: 3; display: flex; align-items: flex-end; justify-content: space-between; width: 100%; gap: 32px; margin-top: auto; }
 .invitation-bottom .section-eyebrow { margin-bottom: 8px; }
 .invitation-bottom h3 { font-size: clamp(20px, 2vw, 28px); margin-bottom: 6px; }
 .invitation-bottom p:last-child { font-size: 14px; color: #69574b; }
 .invitation-link { display: inline-flex; align-items: center; gap: 24px; min-height: 48px; text-decoration: none; border-bottom: 1px solid #a77f65; }
 .invitation-link > span { font-size: 28px; }
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .work-aperture .aperture-surface img { transform: scale(1.18); }
-  .work-aperture:hover .aperture-surface { transform: scale(1.08); }
-  .work-aperture:hover img { opacity: 1; transform: scale(1); }
-}
 .work-editorial-intro { min-height: min(760px, 88svh); padding: 160px var(--gutter) 64px; display: flex; flex-direction: column; justify-content: center; }
 .work-editorial-intro h1 { font-family: var(--font-dm-sans), sans-serif; font-weight: 500; font-size: clamp(58px, 8.5vw, 126px); line-height: 1.02; letter-spacing: -.065em; }
 .work-editorial-intro h1 > span { color: #b44c26; }
@@ -88,7 +73,6 @@
   .experience-scene { min-height: 100svh; }
   .experience-sculpture { width: 140%; margin-left: -20%; margin-right: 0; }
   .experience-sculpture svg { height: clamp(300px, 42vh, 380px); }
-  .work-aperture { width: min(440px, 48vw); margin: 20px auto 28px; }
 }
 @media (max-width: 767.98px) {
   .experience-scene { min-height: max(780px, 100svh); padding: 64px 24px 110px; display: flex; flex-direction: column; justify-content: center; }
@@ -102,9 +86,6 @@
   .work-invitation { min-height: max(740px, 100svh); padding: 56px 24px 112px; }
   .invitation-intro { font-size: 14px; }
   .invitation-word { font-size: 40vw; top: 38%; left: -8%; }
-  .work-aperture { width: min(78vw, 410px); margin: 40px auto; }
-  .aperture-identity { font-size: 52px; }
-  .aperture-identity > span { font-size: 12px; }
   .invitation-bottom { flex-direction: column; align-items: flex-start; gap: 16px; }
   .invitation-bottom h3 { font-size: 20px; }
   .invitation-bottom p:last-child { font-size: 12px; }
@@ -136,12 +117,149 @@
 @media (max-height: 600px) and (min-width: 768px) {
   .experience-scene { min-height: 760px; }
   .work-invitation { min-height: 700px; }
-  .work-aperture { width: 350px; }
   .work-editorial-intro { min-height: 600px; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .aperture-surface { transition: none; }
-  .work-aperture:focus-visible .aperture-surface { border-radius: 50%; }
-  .aperture-surface img { transition: opacity .15s ease-out; }
-  .work-aperture:hover img, .work-aperture:focus-visible img { opacity: 1; }
+
+/* A single canvas and scroll timeline join all three Home sections. */
+.home-journey { position: relative; isolation: isolate; overflow: clip; background: #f6eee4; color: #282019; box-shadow: inset 0 0 110px #eaa27535; }
+.home-journey .experience-scene, .home-journey .areas-section, .home-journey .work-invitation { background: transparent; isolation: auto; overflow: visible; }
+.home-journey .experience-scene::before, .home-journey .work-invitation::before { content: none; }
+.journey-thread { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; overflow: visible; visibility: hidden; }
+.journey-track, .journey-ink { fill: none; stroke-linecap: round; }
+.journey-track { stroke: #c494742e; stroke-width: 2; }
+.journey-ink { stroke: #b66c44; stroke-width: 3; stroke-dasharray: 1; }
+.journey-pearl { filter: drop-shadow(0 5px 4px #75381c30); }
+.home-journey .areas-section { color: #282019; padding: 100px var(--gutter) 130px 16%; min-height: 950px; gap: 5vw; }
+.home-journey .services-intro { align-self: start; padding-top: 35px; }
+.home-journey .services-intro h2 { font-family: var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: -.065em; line-height: 1.02; }
+.home-journey .service-block { padding-block: 34px; border-color: #b98b6b55; }
+.home-journey .service-header h3 { font-family: var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: -.035em; font-size: clamp(24px, 2.5vw, 36px); }
+.home-journey .service-description { color: #69574b; }
+.home-journey .service-number { color: #a74c29; }
+.home-journey .work-invitation { padding-top: 40px; min-height: 100svh; justify-content: flex-start; }
+.home-journey .invitation-word { position: relative; top: auto; left: auto; z-index: 0; font-size: clamp(130px, 27vw, 390px); width: 100%; margin: 5px 0 -.2em; line-height: .95; }
+.home-journey .invitation-word > span { right: 5%; font-size: .4em; }
+.work-screen { position: relative; z-index: 2; display: block; width: min(100%, 1060px); text-decoration: none; margin: 0 auto 54px; }
+.work-screen-reveal { background: #fff; box-shadow: 0 22px 60px -35px #643c2960; border: 1px solid #c9ab91; border-radius: 4px; overflow: hidden; }
+.work-screen img { display: block; width: 100%; height: auto; }
+.screen-caption { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; font-size: 14px; border-bottom: 1px solid #b98b6b55; }
+.screen-caption > span:last-child { font-size: 25px; }
+.work-screen:focus-visible { outline: 3px solid #b44c26; outline-offset: 8px; }
+.work-screen:focus-visible .work-screen-reveal { clip-path: none !important; transform: none !important; }
+.work-screen:hover .screen-caption { color: #a74320; }
+.home-journey .invitation-bottom { margin-top: 0; }
+@media (max-width: 1100px) and (min-width: 768px) {
+  .home-journey .areas-section { padding-left: 15%; grid-template-columns: .8fr 1.2fr; gap: 35px; }
 }
+@media (max-width: 767.98px) {
+  .home-journey .areas-section { padding: 35px 28px 90px 38px; min-height: auto; gap: 32px; }
+  .home-journey .services-intro { padding: 0; }
+  .home-journey .services-intro h2 { font-size: 52px; }
+  .home-journey .service-block { padding-block: 26px; }
+  .home-journey .service-header { padding-left: 30px; }
+  .home-journey .service-header h3 { font-size: 25px; }
+  .home-journey .work-invitation { min-height: auto; padding: 36px 24px 100px; }
+  .home-journey .invitation-word { margin: 25px 0 -.12em; font-size: 30vw; }
+  .work-screen { margin-bottom: 30px; }
+  .screen-caption { font-size: 12px; }
+  .journey-pearl { r: 7px; }
+  .journey-ink { stroke-width: 2; }
+}
+.home-journey .experience-footnote { width: fit-content; background: #f6eee4; padding-right: 12px; }
+@media (prefers-reduced-motion: reduce) {
+  .home-journey .journey-thread { visibility: hidden !important; }
+  .home-journey .work-screen-reveal { clip-path: none !important; transform: none !important; }
+  .home-journey .service-block, .home-journey .invitation-word, .home-journey .sculpture-object { transform: none !important; }
+}
+
+/* Longer reading beats, with the Experience composition held in view. */
+.home-journey .experience-scene { display: block; min-height: 180svh; padding: 0; }
+.experience-stage { position: sticky; top: 0; min-height: max(850px, 100svh); padding: 82px var(--gutter) 40px; display: flex; flex-direction: column; justify-content: center; }
+.home-journey .areas-section { min-height: 200svh; align-items: start; padding-block: 120px 160px; }
+.home-journey .services-intro { position: sticky; top: 140px; }
+.home-journey .service-block { min-height: 40svh; display: flex; align-items: center; padding-block: 60px; }
+.home-journey .work-invitation { min-height: 150svh; padding-top: 100px; padding-bottom: 160px; }
+.home-journey .invitation-bottom { margin-top: auto; }
+
+/* Warm charcoal -> sand continues the ivory/copper family below Work. */
+.home-page .philosophy-section { height: auto; min-height: 100svh; grid-template-columns: 1fr minmax(0, .9fr); align-items: center; gap: 6vw; padding: 80px var(--gutter); background: #302a26; color: #f6eee4; }
+.home-page .philosophy-copy { padding: 40px 0; }
+.home-page .philosophy-copy > p:not(.section-eyebrow) { color: #d7c8bc; }
+.home-page .philosophy-photo { display: block; width: 100%; max-width: 480px; height: auto; min-height: 0; aspect-ratio: 853 / 1280; object-fit: contain; justify-self: center; }
+.home-page .cta-section { background: #ddc3aa; color: #302a26; }
+.home-page .contact-bottom-row { border-color: #302a2655; }
+.home-page .contact-arrow { color: #805039; }
+@media (max-width: 767.98px) {
+  .home-journey .experience-scene { min-height: 145svh; }
+  .experience-stage { min-height: max(780px, 100svh); padding: 64px 24px 110px; }
+  .home-journey .areas-section { min-height: 175svh; padding-block: 64px 110px; }
+  .home-journey .services-intro { position: static; }
+  .home-journey .service-block { min-height: 30svh; padding-block: 40px; }
+  .home-journey .work-invitation { min-height: 115svh; padding-top: 60px; padding-bottom: 120px; }
+  .home-page .philosophy-section { grid-template-columns: 1fr; grid-template-rows: auto auto; gap: 32px; padding: 64px 24px 72px; }
+  .home-page .philosophy-copy { padding: 0; }
+  .home-page .philosophy-photo { max-width: 420px; }
+}
+@media (max-height: 799px), (prefers-reduced-motion: reduce) {
+  .experience-stage { position: relative; }
+  .home-journey .services-intro { position: static; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-journey .experience-scene { min-height: auto; }
+}
+
+/* Make the reading rhythm explicit, with quieter supporting decoration. */
+.home-journey .journey-pearl { r: 10px; }
+.home-journey .journey-ink { stroke-width: 2; }
+.home-journey .services-intro h2 { font-size: clamp(44px, 5vw, 72px); }
+.home-journey .service-block { position: relative; --read-progress: 1; }
+.home-journey .service-block::after { content: ''; position: absolute; left: 40px; bottom: 30px; width: min(180px, 45%); height: 3px; background: #ad5535; transform: scaleX(var(--read-progress)); transform-origin: left; }
+.home-journey .service-header h3 { font-size: clamp(30px, 3vw, 44px); line-height: 1.1; color: #282019; }
+.home-journey .service-description { font-size: clamp(17px, 1.4vw, 20px); line-height: 1.65; color: #514338; margin-top: 22px; }
+
+/* Restore a compact split composition; the portrait fills its allotted frame. */
+.home-page .philosophy-section { height: clamp(600px, 80svh, 720px); min-height: 0; grid-template-columns: 1fr 1fr; gap: 0; padding: 0; align-items: stretch; }
+.home-page .philosophy-copy { padding: 48px clamp(24px, 5vw, 80px); }
+.home-page .philosophy-copy h2 { font-family: var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: -.05em; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.1; }
+.home-page .philosophy-photo { width: 100%; max-width: none; height: 100%; min-height: 0; aspect-ratio: auto; object-fit: cover; object-position: 50% 24%; }
+
+/* Contact and the moving portrait are one continuous closing composition. */
+.home-ending { background: #181510; color: #f6eee4; }
+.contact-finale { position: relative; z-index: 2; padding: 100px var(--gutter) 64px; background: radial-gradient(ellipse at 70% 0%, #3a2b2066, transparent 65%); }
+.finale-top { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; color: #c7b39e; }
+.finale-top .section-eyebrow { margin: 0; }
+.finale-top > p:last-child { font-size: 14px; }
+.contact-finale h2 { font-family: var(--font-dm-sans), sans-serif; font-weight: 500; font-size: clamp(90px, 15vw, 216px); letter-spacing: -.07em; line-height: 1; margin: 70px 0 60px; }
+.contact-finale h2 > span { color: #d69a67; }
+.finale-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 28px; padding-top: 32px; border-top: 1px solid #d6b48a50; }
+.finale-email { display: inline-flex; gap: 28px; align-items: center; min-height: 48px; font-size: clamp(17px, 2.2vw, 32px); text-decoration: none; }
+.finale-email > span:first-child { overflow-wrap: anywhere; }
+.finale-email > span:last-child { color: #d69a67; }
+.finale-email:hover { text-decoration: underline; text-underline-offset: 8px; }
+.contact-finale .profile-links { margin: 0; }
+.contact-finale a:focus-visible { outline: 2px solid #e6b383; outline-offset: 7px; }
+.home-ending .identity-footer::before { content: ''; position: absolute; z-index: 2; inset: 0 0 auto; height: 38%; background: linear-gradient(#181510, #181510b3 30%, transparent); pointer-events: none; }
+.home-ending .footer-motion-control { z-index: 3; }
+@media (max-width: 767.98px) {
+  .home-journey .journey-pearl { r: 6px; }
+  .home-journey .service-header h3 { font-size: 30px; }
+  .home-journey .service-description { font-size: 17px; margin-top: 16px; }
+  .home-journey .service-block::after { left: 30px; bottom: 18px; width: 100px; }
+  .home-page .philosophy-section { height: auto; min-height: 0; grid-template-columns: 1fr; grid-template-rows: auto 340px; gap: 0; }
+  .home-page .philosophy-copy { padding: 40px 24px; }
+  .home-page .philosophy-copy h2 { font-size: 36px; }
+  .home-page .philosophy-photo { max-width: none; object-position: 50% 23%; }
+  .contact-finale { padding: 64px 24px 44px; }
+  .finale-top { flex-direction: column; gap: 14px; }
+  .finale-top > p:last-child { max-width: 28ch; line-height: 1.6; }
+  .contact-finale h2 { font-size: clamp(76px, 20vw, 140px); margin: 48px 0 40px; }
+  .finale-email { font-size: 16px; gap: 12px; }
+  .finale-bottom { gap: 20px; padding-top: 24px; }
+  .home-ending .identity-footer { height: 85svh; min-height: 560px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-journey .experience-statement h2 > span, .home-journey .service-header h3, .home-journey .service-description { transform: none !important; opacity: 1 !important; }
+  .home-journey .service-block::after { transform: none; }
+}
+/* Keep the face and hair inside the cover crop on both split and stacked frames. */
+.home-page .philosophy-photo { object-position: 50% 0%; }

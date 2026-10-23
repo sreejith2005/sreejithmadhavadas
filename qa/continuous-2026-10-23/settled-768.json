@@ -1,0 +1,52 @@
+[
+  {
+    "width": 768,
+    "height": 900,
+    "errors": [],
+    "states": [
+      {
+        "ink": "1",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.798333",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517281",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.236835",
+        "clip": "inset(14.4697% 3.1007%)",
+        "overflow": false
+      },
+      {
+        "ink": "0",
+        "clip": "inset(0%)",
+        "overflow": false
+      },
+      {
+        "ink": "0.517281",
+        "clip": "inset(42% 9%)",
+        "overflow": false
+      }
+    ],
+    "reverse": true,
+    "reduced": {
+      "clip": "none",
+      "transform": "none"
+    },
+    "focus": true
+  },
+  {
+    "noJS": {
+      "clip": "none",
+      "image": true
+    },
+    "services": 4
+  }
+]

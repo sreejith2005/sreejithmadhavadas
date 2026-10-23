@@ -15,6 +15,8 @@ export default function LenisProvider() {
         lerp: 0.08,
         duration: 1.2,
         smoothWheel: true,
+        // Reduce travel per wheel gesture, not just the time taken to reach it.
+        wheelMultiplier: 0.45,
       });
 
       const tick = (time: number) => {
