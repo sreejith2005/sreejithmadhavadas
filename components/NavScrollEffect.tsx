@@ -8,14 +8,8 @@ export default function NavScrollEffect() {
     if (!nav) return;
 
     const handleScroll = () => {
-      if (window.scrollY > 60) {
-        nav.style.backdropFilter = "blur(12px)";
-        nav.style.background = "rgba(244, 237, 229, 0.85)";
-        nav.style.transition = "all 0.3s ease";
-      } else {
-        nav.style.backdropFilter = "none";
-        nav.style.background = "rgba(244, 237, 229, 0.95)";
-      }
+      const next = String(window.scrollY > 60);
+      if (nav.dataset.scrolled !== next) nav.dataset.scrolled = next;
     };
 
     handleScroll();

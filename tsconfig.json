@@ -39,7 +39,9 @@
     ".next-revision-20261020/types/**/*.ts",
     ".next-revision-20261020-final/types/**/*.ts",
     ".next-revision-20261020-reviewed/types/**/*.ts",
-    ".next-revision-20261020-verified/types/**/*.ts"
+    ".next-revision-20261020-verified/types/**/*.ts",
+    ".next-motion-20261021/types/**/*.ts",
+    ".next-motion-20261021-final/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

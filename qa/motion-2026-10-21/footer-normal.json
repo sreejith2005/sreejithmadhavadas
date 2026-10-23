@@ -1,0 +1,32 @@
+[
+  {
+    "hidden": false,
+    "label": "visible",
+    "paused": false,
+    "playing": "true",
+    "src": "/vids/Character_bobbing_head_web.mp4",
+    "time": 4.341217
+  },
+  {
+    "label": "manual-pause",
+    "paused": true,
+    "playing": "false"
+  },
+  {
+    "control": "Pause animation",
+    "label": "manual-resumed",
+    "paused": false,
+    "playing": "true",
+    "posterWidth": 1920,
+    "src": "/vids/Character_bobbing_head_web.mp4"
+  },
+  {
+    "control": "Pause animation",
+    "label": "attempted-offscreen-still-partially-visible",
+    "paused": false,
+    "playing": "true",
+    "posterWidth": 1920,
+    "src": "/vids/Character_bobbing_head_web.mp4",
+    "note": "Footer top was 423px in 900px viewport. This is not an offscreen-pause test."
+  }
+]

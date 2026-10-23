@@ -1,0 +1,368 @@
+[
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 900,
+        "name": "hero-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "tagline-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "areas-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "work-transition",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "philosophy-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/#experience",
+    "viewport": [
+      1440,
+      900
+    ],
+    "width": [
+      1425,
+      1425
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 900,
+        "name": "case-cover",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/work#mk1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "width": [
+      1425,
+      1425
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 900,
+        "name": "about-portrait",
+        "spill": 0
+      },
+      {
+        "height": 508.6000061035156,
+        "name": "about-note",
+        "spill": 0
+      },
+      {
+        "height": 1357.3499755859375,
+        "name": "career-timeline",
+        "spill": 0
+      },
+      {
+        "height": 426.2000122070313,
+        "name": "about-facts",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 900,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/about",
+    "viewport": [
+      1440,
+      900
+    ],
+    "width": [
+      1425,
+      1425
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 844,
+        "name": "about-portrait",
+        "spill": 0
+      },
+      {
+        "height": 551.5499877929688,
+        "name": "about-note",
+        "spill": 0
+      },
+      {
+        "height": 1585.5,
+        "name": "career-timeline",
+        "spill": 0
+      },
+      {
+        "height": 518,
+        "name": "about-facts",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/about#career-barc",
+    "viewport": [
+      375,
+      844
+    ],
+    "width": [
+      360,
+      360
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 844,
+        "name": "hero-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "tagline-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "areas-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "work-transition",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "philosophy-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/",
+    "viewport": [
+      375,
+      844
+    ],
+    "width": [
+      360,
+      360
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 844,
+        "name": "case-cover",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/work#mk1",
+    "viewport": [
+      375,
+      844
+    ],
+    "width": [
+      360,
+      360
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 844,
+        "name": "case-cover",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/work#mk1",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": [
+      375,
+      375
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 844,
+        "name": "about-portrait",
+        "spill": 0
+      },
+      {
+        "height": 551.5499877929688,
+        "name": "about-note",
+        "spill": 0
+      },
+      {
+        "height": 1532.7000732421875,
+        "name": "career-timeline",
+        "spill": 0
+      },
+      {
+        "height": 518,
+        "name": "about-facts",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/about",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": [
+      375,
+      375
+    ]
+  },
+  {
+    "hidden": 0,
+    "panels": [
+      {
+        "height": 844,
+        "name": "hero-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "tagline-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "areas-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "work-transition",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "philosophy-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "cta-section",
+        "spill": 0
+      },
+      {
+        "height": 844,
+        "name": "identity-footer",
+        "spill": 0
+      }
+    ],
+    "url": "http://localhost:3011/#contact",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": [
+      375,
+      375
+    ]
+  }
+]

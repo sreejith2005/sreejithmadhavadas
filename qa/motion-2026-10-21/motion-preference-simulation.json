@@ -1,0 +1,49 @@
+[
+  {
+    "label": "normal",
+    "lenis": "__variable_27d10a __variable_633903 lenis lenis-smooth",
+    "transforms": [
+      "translate(0px, 0px)",
+      "translate3d(-0.6136px, 0.409px, 0px)",
+      "translate3d(0px, -0.409px, 0px)",
+      "translate3d(0.6136px, 0.409px, 0px)",
+      "translate(0px, 56px)",
+      "translate(0px, 56px)",
+      "translate(0px, 56px)",
+      "translate(0px, 70px) rotate(-7deg)",
+      "translate(0px, 56px)",
+      "translate(0px, 56px)"
+    ]
+  },
+  {
+    "flag": "true",
+    "footerControl": false,
+    "label": "reduced",
+    "lenis": "__variable_27d10a __variable_633903",
+    "transforms": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "label": "normal-restored",
+    "lenis": "__variable_27d10a __variable_633903 lenis lenis-smooth",
+    "transforms": [
+      "translate(0px, 56px)",
+      "translate(0px, 56px)",
+      "translate(0px, 56px)",
+      "translate(0px, 56px)",
+      "translate(0px, 70px) rotate(-7deg)",
+      "translate(0px, 56px)",
+      "translate(0px, 56px)"
+    ]
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "status": "not-tested",
+  "reason": "Requested 844x390 override did not apply to the target tab; observed 1440x900. Browser connection then became unavailable.",
+  "observations": [
+    {
+      "hidden": 0,
+      "panels": [
+        {
+          "height": 900,
+          "name": "hero-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "tagline-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "areas-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "work-transition",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "philosophy-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "cta-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "identity-footer",
+          "spill": 0
+        }
+      ],
+      "url": "http://localhost:3011/",
+      "viewport": [
+        1440,
+        900
+      ],
+      "width": [
+        1425,
+        1425
+      ]
+    },
+    {
+      "hidden": 0,
+      "panels": [
+        {
+          "height": 900,
+          "name": "case-cover",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "cta-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "identity-footer",
+          "spill": 0
+        }
+      ],
+      "url": "http://localhost:3011/work#mk1",
+      "viewport": [
+        1440,
+        900
+      ],
+      "width": [
+        1425,
+        1425
+      ]
+    },
+    {
+      "hidden": 0,
+      "panels": [
+        {
+          "height": 900,
+          "name": "about-portrait",
+          "spill": 0
+        },
+        {
+          "height": 508.6000061035156,
+          "name": "about-note",
+          "spill": 0
+        },
+        {
+          "height": 1357.3499755859375,
+          "name": "career-timeline",
+          "spill": 0
+        },
+        {
+          "height": 426.2000122070313,
+          "name": "about-facts",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "cta-section",
+          "spill": 0
+        },
+        {
+          "height": 900,
+          "name": "identity-footer",
+          "spill": 0
+        }
+      ],
+      "url": "http://localhost:3011/about#career-barc",
+      "viewport": [
+        1440,
+        900
+      ],
+      "width": [
+        1425,
+        1425
+      ]
+    }
+  ]
+}

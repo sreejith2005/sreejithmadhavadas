@@ -1,0 +1,29 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "hasIdentity": true,
+    "privateImagesAbsent": true,
+    "resumeAbsent": true,
+    "h1Count": 1,
+    "caseStudies": 0
+  },
+  {
+    "route": "/work",
+    "status": 200,
+    "hasIdentity": true,
+    "privateImagesAbsent": true,
+    "resumeAbsent": true,
+    "h1Count": 1,
+    "caseStudies": 1
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "hasIdentity": true,
+    "privateImagesAbsent": true,
+    "resumeAbsent": true,
+    "h1Count": 1,
+    "caseStudies": 0
+  }
+]

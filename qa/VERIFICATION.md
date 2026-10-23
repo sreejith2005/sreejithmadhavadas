@@ -1,3 +1,5 @@
+Latest refinement: [October 21 motion implementation and verification](motion-2026-10-21/VERIFICATION.md), report completed October 22. Includes explicit outstanding browser checks.
+
 # Latest verification - 2026-10-20
 
 Current preview: http://localhost:3011. The four visual corrections are implemented. Final build passes; all 15 route/viewport measurements fit, and the tested panels equal viewport height.

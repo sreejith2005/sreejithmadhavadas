@@ -1,0 +1,38 @@
+[
+  {
+    "attempts": "1",
+    "label": "autoplay-rejection",
+    "paused": true,
+    "playing": "false",
+    "posterWidth": 1920,
+    "src": "/vids/Character_bobbing_head_web.mp4"
+  },
+  {
+    "attempts": "1",
+    "label": "autoplay-return",
+    "paused": true,
+    "playing": "false",
+    "posterWidth": 1920,
+    "src": "/vids/Character_bobbing_head_web.mp4"
+  },
+  {
+    "label": "media-failure",
+    "paused": true,
+    "playing": "false",
+    "posterWidth": 1920,
+    "src": "/vids/Character_bobbing_head_web.mp4"
+  },
+  {
+    "chapters": 4,
+    "disclosure": true,
+    "label": "no-application-js",
+    "scripts": 0,
+    "visible": true
+  },
+  {
+    "image": "/images/Screenshot 2026-10-20 000040.png",
+    "label": "no-js-work",
+    "projects": 1,
+    "scripts": 0
+  }
+]

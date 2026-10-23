@@ -1,4 +1,5 @@
-﻿import type { Metadata } from "next";
+import ScrollAnimator from "@/components/ScrollAnimator";
+import type { Metadata } from "next";
 import SiteNavigation from "@/components/SiteNavigation";
 import SiteFooter from "@/components/SiteFooter";
 import ContactSection from "@/components/ContactSection";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main id="main-content" className="about-page">
-      <SiteNavigation />
+      <SiteNavigation /><ScrollAnimator />
       <header className="page-intro about-intro">
         <p className="section-eyebrow">About / Sreejith Madhavadas</p>
         <h1>I tend to build<br />the missing piece.</h1>

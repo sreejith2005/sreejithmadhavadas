@@ -1,9 +1,9 @@
-﻿export default function ContactSection() {
+export default function ContactSection() {
   return (
-    <section id="contact" tabIndex={-1} className="cta-section" aria-labelledby="contact-heading">
+    <section id="contact" data-scene tabIndex={-1} className="cta-section" aria-labelledby="contact-heading">
       <div className="cta-grid">
         <p className="section-eyebrow">The next good thing / Opportunities &amp; collaboration</p>
-        <div className="contact-heading-row">
+        <div data-arrival className="contact-heading-row">
           <h2 id="contact-heading">Good ideas.<br />Meet your builder.</h2>
           <span className="contact-arrow" aria-hidden="true">↙</span>
         </div>
